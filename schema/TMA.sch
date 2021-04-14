@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "2020M1 Telemetrics"
-Date ""
+Title "TMA"
+Date "2021-04-15"
 Rev ""
 Comp "DIYCBM "
-Comment1 ""
-Comment2 ""
+Comment1 "https://github.com/diycbm/TMA"
+Comment2 "Telemetrics board for model rockets"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -612,7 +612,6 @@ LED0
 Text GLabel 3950 2900 0    50   Input ~ 0
 LED1
 NoConn ~ 3950 3000
-NoConn ~ 3950 3100
 Text GLabel 8650 1000 1    50   Input ~ 0
 LED0
 Text GLabel 9450 1000 1    50   Input ~ 0
@@ -783,4 +782,6 @@ F 3 "" H 10850 1350 50  0001 C CNN
 $EndComp
 Text Notes 9900 1300 0    50   ~ 0
 Mode Selector
+Text GLabel 3950 3100 0    50   Input ~ 0
+MODE
 $EndSCHEMATC
