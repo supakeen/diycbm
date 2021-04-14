@@ -720,14 +720,14 @@ $Comp
 L Switch:SW_SPDT SW1
 U 1 1 60789BF3
 P 10550 1600
-F 0 "SW1" H 10550 1275 50  0000 C CNN
-F 1 "SW_SPDT" H 10550 1366 50  0000 C CNN
+F 0 "SW1" H 10350 1350 50  0000 C CNN
+F 1 "SW_SPDT" H 10350 1450 50  0000 C CNN
 F 2 "" H 10550 1600 50  0001 C CNN
 F 3 "~" H 10550 1600 50  0001 C CNN
 	1    10550 1600
 	-1   0    0    1   
 $EndComp
-Text GLabel 10900 1600 2    50   Input ~ 0
+Text GLabel 10750 1600 2    50   Input ~ 0
 MODE
 $Comp
 L power:+3.3V #PWR015
@@ -755,6 +755,4 @@ Text Notes 9900 1300 0    50   ~ 0
 Mode Selector
 Text GLabel 3950 3100 0    50   Input ~ 0
 MODE
-Wire Wire Line
-	10750 1600 10900 1600
 $EndSCHEMATC
