@@ -11,3 +11,9 @@ continually when there is too much data.
 
 Powering on the board without the collection jumper being set allows you to
 speak I2C to the board to get the data out of the flash memory again.
+
+## PCB
+
+KiCad PCB related files can be found in the `pcb/` subdirectory, or
+[view the schema PDF](https://github.com/diycbm/TMA/blob/master/pcb/plot/TMA.pdf)
+directly.
