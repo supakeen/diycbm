@@ -245,7 +245,7 @@ F 3 "" H 2150 1150 50  0001 C CNN
 $EndComp
 Text Notes 3150 600  2    50   ~ 0
 Battery Power
-Text Notes 7600 600  2    50   ~ 0
+Text Notes 7550 600  2    50   ~ 0
 Programming/Power\n
 $Comp
 L Connector_Generic:Conn_01x02 J1
@@ -456,46 +456,26 @@ Connection ~ 6000 1000
 $Comp
 L power:+3.3V #PWR011
 U 1 1 607C1119
-P 7150 950
-F 0 "#PWR011" H 7150 800 50  0001 C CNN
-F 1 "+3.3V" V 7150 1200 50  0000 C CNN
-F 2 "" H 7150 950 50  0001 C CNN
-F 3 "" H 7150 950 50  0001 C CNN
-	1    7150 950 
+P 7150 1000
+F 0 "#PWR011" H 7150 850 50  0001 C CNN
+F 1 "+3.3V" V 7150 1250 50  0000 C CNN
+F 2 "" H 7150 1000 50  0001 C CNN
+F 3 "" H 7150 1000 50  0001 C CNN
+	1    7150 1000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 607C2610
-P 7150 1250
-F 0 "#PWR012" H 7150 1000 50  0001 C CNN
-F 1 "GND" V 7150 1000 50  0000 C CNN
-F 2 "" H 7150 1250 50  0001 C CNN
-F 3 "" H 7150 1250 50  0001 C CNN
-	1    7150 1250
+P 7150 1200
+F 0 "#PWR012" H 7150 950 50  0001 C CNN
+F 1 "GND" V 7150 950 50  0000 C CNN
+F 2 "" H 7150 1200 50  0001 C CNN
+F 3 "" H 7150 1200 50  0001 C CNN
+	1    7150 1200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 607C634C
-P 7650 1050
-F 0 "R1" V 7454 1050 50  0000 C CNN
-F 1 "5k" V 7545 1050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 7650 1050 50  0001 C CNN
-F 3 "~" H 7650 1050 50  0001 C CNN
-	1    7650 1050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7150 1050 7550 1050
-Wire Wire Line
-	7800 1150 7800 1050
-Wire Wire Line
-	7800 1050 7750 1050
-Wire Wire Line
-	7150 1150 7800 1150
-Connection ~ 7800 1050
-Text GLabel 8000 1050 2    50   Input ~ 0
+Text GLabel 7150 1100 2    50   Input ~ 0
 UPDI
 Wire Notes Line
 	2550 1850 11200 1850
@@ -507,26 +487,10 @@ Text GLabel 4700 2750 2    50   Input ~ 0
 SDA
 Text GLabel 4700 2850 2    50   Input ~ 0
 SCL
-$Comp
-L Connector_Generic:Conn_01x06 J2
-U 1 1 607F77F0
-P 6950 1250
-F 0 "J2" H 6868 725 50  0000 C CNN
-F 1 "Conn_01x06" H 6868 816 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 6950 1250 50  0001 C CNN
-F 3 "~" H 6950 1250 50  0001 C CNN
-	1    6950 1250
-	-1   0    0    1   
-$EndComp
-Text GLabel 7150 1350 2    50   Input ~ 0
-SDA
-Text GLabel 7150 1450 2    50   Input ~ 0
-SCL
 NoConn ~ 4700 2950
 NoConn ~ 4700 3050
 NoConn ~ 4700 3150
 NoConn ~ 4700 3250
-NoConn ~ 4700 3350
 $Comp
 L Device:LED_Small D3
 U 1 1 60801C48
@@ -555,7 +519,6 @@ Text GLabel 3500 2650 0    50   Input ~ 0
 LED0
 Text GLabel 3500 2750 0    50   Input ~ 0
 LED1
-NoConn ~ 3500 2850
 Text GLabel 8650 1000 1    50   Input ~ 0
 LED0
 Text GLabel 9450 1000 1    50   Input ~ 0
@@ -636,6 +599,89 @@ F 3 "~" H 10500 800 50  0001 C CNN
 $EndComp
 Text GLabel 10400 800  0    50   Input ~ 0
 SDA
+Text Notes 9900 600  0    50   ~ 0
+I2C Pullups\n
+Wire Notes Line
+	9850 1200 11200 1200
+Text GLabel 4700 3350 2    50   Input ~ 0
+MODE
+Wire Wire Line
+	10600 800  10700 800 
+Wire Wire Line
+	10700 1000 10700 800 
+Wire Wire Line
+	10600 1000 10700 1000
+Connection ~ 10700 800 
+Wire Notes Line
+	5400 4650 5400 1850
+Wire Notes Line
+	500  4650 5400 4650
+Wire Notes Line
+	6750 1800 6750 500 
+Wire Wire Line
+	6000 1000 6100 1000
+Wire Wire Line
+	3950 1000 4300 1000
+Wire Wire Line
+	4350 1200 4300 1200
+Wire Wire Line
+	4300 1200 4300 1000
+Connection ~ 4300 1000
+Wire Wire Line
+	4300 1000 4350 1000
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 607DB715
+P 6950 1200
+F 0 "J?" H 6868 775 50  0000 C CNN
+F 1 "Conn_01x05" H 6868 866 50  0000 C CNN
+F 2 "" H 6950 1200 50  0001 C CNN
+F 3 "~" H 6950 1200 50  0001 C CNN
+	1    6950 1200
+	-1   0    0    1   
+$EndComp
+Text GLabel 3500 2950 0    50   Input ~ 0
+RXD
+Text GLabel 3500 2850 0    50   Input ~ 0
+TXD
+Text GLabel 7150 1300 2    50   Input ~ 0
+RXD
+Text GLabel 7150 1400 2    50   Input ~ 0
+TXD
+Wire Notes Line
+	7600 500  7600 1850
+Text Notes 7650 600  0    50   ~ 0
+Extension
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 607EE0F5
+P 7900 1300
+F 0 "J?" H 7818 975 50  0000 C CNN
+F 1 "Conn_01x02" H 7818 1066 50  0000 C CNN
+F 2 "" H 7900 1300 50  0001 C CNN
+F 3 "~" H 7900 1300 50  0001 C CNN
+	1    7900 1300
+	-1   0    0    1   
+$EndComp
+Text GLabel 8100 1200 2    50   Input ~ 0
+SDA
+Text GLabel 8100 1300 2    50   Input ~ 0
+SCL
+Text GLabel 10850 1550 2    50   Input ~ 0
+MODE
+Text Notes 9900 1300 0    50   ~ 0
+Mode Selector
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 607F369F
+P 10350 1550
+F 0 "J?" H 10650 1600 50  0000 C CNN
+F 1 "Conn_01x02" H 10600 1700 50  0000 C CNN
+F 2 "" H 10350 1550 50  0001 C CNN
+F 3 "~" H 10350 1550 50  0001 C CNN
+	1    10350 1550
+	-1   0    0    1   
+$EndComp
 $Comp
 L power:+3.3V #PWR017
 U 1 1 60782162
@@ -647,102 +693,44 @@ F 3 "" H 10700 800 50  0001 C CNN
 	1    10700 800 
 	1    0    0    -1  
 $EndComp
-Text Notes 9900 600  0    50   ~ 0
-I2C Pullups\n
-Wire Notes Line
-	9850 1200 11200 1200
 $Comp
-L Switch:SW_SPDT SW1
-U 1 1 60789BF3
-P 10550 1600
-F 0 "SW1" H 10350 1350 50  0000 C CNN
-F 1 "SW_SPDT" H 10350 1450 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 10550 1600 50  0001 C CNN
-F 3 "~" H 10550 1600 50  0001 C CNN
-	1    10550 1600
-	-1   0    0    1   
-$EndComp
-Text GLabel 10750 1600 2    50   Input ~ 0
-MODE
-$Comp
-L power:+3.3V #PWR015
-U 1 1 6078E8D6
-P 10350 1500
-F 0 "#PWR015" H 10350 1350 50  0001 C CNN
-F 1 "+3.3V" V 10350 1750 50  0000 C CNN
-F 2 "" H 10350 1500 50  0001 C CNN
-F 3 "" H 10350 1500 50  0001 C CNN
-	1    10350 1500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR016
-U 1 1 6078F1F6
-P 10350 1700
-F 0 "#PWR016" H 10350 1450 50  0001 C CNN
-F 1 "GND" H 10355 1527 50  0000 C CNN
-F 2 "" H 10350 1700 50  0001 C CNN
-F 3 "" H 10350 1700 50  0001 C CNN
-	1    10350 1700
-	0    1    1    0   
-$EndComp
-Text Notes 9900 1300 0    50   ~ 0
-Mode Selector
-Text GLabel 3500 2950 0    50   Input ~ 0
-MODE
-Wire Wire Line
-	7800 1050 7900 1050
-Wire Wire Line
-	10600 800  10700 800 
-Wire Wire Line
-	10700 1000 10700 800 
-Wire Wire Line
-	10600 1000 10700 1000
-Connection ~ 10700 800 
-$Comp
-L power:+3.3V #PWR0107
-U 1 1 607905AF
-P 7900 650
-F 0 "#PWR0107" H 7900 500 50  0001 C CNN
-F 1 "+3.3V" H 8100 750 50  0000 C CNN
-F 2 "" H 7900 650 50  0001 C CNN
-F 3 "" H 7900 650 50  0001 C CNN
-	1    7900 650 
+L power:+3.3V #PWR?
+U 1 1 607F6852
+P 10550 1450
+F 0 "#PWR?" H 10550 1300 50  0001 C CNN
+F 1 "+3.3V" H 10700 1550 50  0000 C CNN
+F 2 "" H 10550 1450 50  0001 C CNN
+F 3 "" H 10550 1450 50  0001 C CNN
+	1    10550 1450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D1
-U 1 1 607905B5
-P 7900 850
-F 0 "D1" V 7800 1000 50  0000 C CNN
-F 1 "D_Schottky" V 7900 1150 50  0000 C CNN
-F 2 "Diode_SMD:D_0402_1005Metric" H 7900 850 50  0001 C CNN
-F 3 "~" H 7900 850 50  0001 C CNN
-	1    7900 850 
+L Device:R_Small R?
+U 1 1 607F6F0C
+P 10750 1750
+F 0 "R?" V 10650 1650 50  0000 C CNN
+F 1 "10k" V 10650 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10750 1750 50  0001 C CNN
+F 3 "~" H 10750 1750 50  0001 C CNN
+	1    10750 1750
 	0    1    1    0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607F7A49
+P 10850 1750
+F 0 "#PWR?" H 10850 1500 50  0001 C CNN
+F 1 "GND" V 10850 1550 50  0000 C CNN
+F 2 "" H 10850 1750 50  0001 C CNN
+F 3 "" H 10850 1750 50  0001 C CNN
+	1    10850 1750
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	7900 700  7900 650 
-Wire Notes Line
-	5400 4650 5400 1850
-Wire Notes Line
-	500  4650 5400 4650
-Wire Notes Line
-	6750 1800 6750 500 
+	10550 1550 10550 1750
 Wire Wire Line
-	6000 1000 6100 1000
+	10550 1750 10650 1750
 Wire Wire Line
-	7900 1050 7900 1000
-Connection ~ 7900 1050
-Wire Wire Line
-	7900 1050 8000 1050
-Wire Wire Line
-	3950 1000 4300 1000
-Wire Wire Line
-	4350 1200 4300 1200
-Wire Wire Line
-	4300 1200 4300 1000
-Connection ~ 4300 1000
-Wire Wire Line
-	4300 1000 4350 1000
+	10550 1550 10850 1550
+Connection ~ 10550 1550
 $EndSCHEMATC
