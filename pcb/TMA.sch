@@ -261,12 +261,12 @@ $EndComp
 $Comp
 L MCU_Microchip_ATtiny:ATtiny1614-SS U3
 U 1 1 6079184C
-P 4550 3200
-F 0 "U3" H 4700 3900 50  0000 C CNN
-F 1 "ATtiny1614-SS" H 4150 3900 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4550 3200 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 4550 3200 50  0001 C CNN
-	1    4550 3200
+P 4100 3050
+F 0 "U3" H 4250 3750 50  0000 C CNN
+F 1 "ATtiny1614-SS" H 3700 3750 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4100 3050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 4100 3050 50  0001 C CNN
+	1    4100 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -305,26 +305,26 @@ $EndComp
 $Comp
 L power:+3.3V #PWR07
 U 1 1 60798522
-P 4550 2500
-F 0 "#PWR07" H 4550 2350 50  0001 C CNN
-F 1 "+3.3V" H 4565 2673 50  0000 C CNN
-F 2 "" H 4550 2500 50  0001 C CNN
-F 3 "" H 4550 2500 50  0001 C CNN
-	1    4550 2500
+P 4100 2350
+F 0 "#PWR07" H 4100 2200 50  0001 C CNN
+F 1 "+3.3V" H 4115 2523 50  0000 C CNN
+F 2 "" H 4100 2350 50  0001 C CNN
+F 3 "" H 4100 2350 50  0001 C CNN
+	1    4100 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 60798916
-P 4550 3900
-F 0 "#PWR08" H 4550 3650 50  0001 C CNN
-F 1 "GND" H 4555 3727 50  0000 C CNN
-F 2 "" H 4550 3900 50  0001 C CNN
-F 3 "" H 4550 3900 50  0001 C CNN
-	1    4550 3900
+P 4100 3750
+F 0 "#PWR08" H 4100 3500 50  0001 C CNN
+F 1 "GND" H 4105 3577 50  0000 C CNN
+F 2 "" H 4100 3750 50  0001 C CNN
+F 3 "" H 4100 3750 50  0001 C CNN
+	1    4100 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5150 2800 2    50   Input ~ 0
+Text GLabel 4700 2650 2    50   Input ~ 0
 UPDI
 $Comp
 L Regulator_Linear:MIC5504-3.3YM5 U4
@@ -518,23 +518,7 @@ Wire Wire Line
 	7800 1050 7750 1050
 Wire Wire Line
 	7150 1150 7800 1150
-Wire Wire Line
-	7800 1050 7900 1050
 Connection ~ 7800 1050
-$Comp
-L Device:D_Schottky D2
-U 1 1 607CBF31
-P 7900 900
-F 0 "D2" V 7800 1050 50  0000 C CNN
-F 1 "D_Schottky" V 7900 1200 50  0000 C CNN
-F 2 "" H 7900 900 50  0001 C CNN
-F 3 "~" H 7900 900 50  0001 C CNN
-	1    7900 900 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7900 1050 8000 1050
-Connection ~ 7900 1050
 Text GLabel 8000 1050 2    50   Input ~ 0
 UPDI
 Wire Notes Line
@@ -543,25 +527,9 @@ Wire Notes Line
 	2550 500  2550 4650
 Wire Notes Line
 	8450 500  8450 1850
-Wire Notes Line
-	500  4650 6750 4650
-Wire Notes Line
-	6750 500  6750 4650
-Wire Notes Line
-	500  4700 6800 4700
-Wire Notes Line
-	6800 4700 6800 1900
-Wire Notes Line
-	6800 1900 11200 1900
-Wire Notes Line
-	500  4750 6850 4750
-Wire Notes Line
-	6850 4750 6850 1950
-Wire Notes Line
-	6850 1950 11200 1950
-Text GLabel 5150 2900 2    50   Input ~ 0
+Text GLabel 4700 2750 2    50   Input ~ 0
 SDA
-Text GLabel 5150 3000 2    50   Input ~ 0
+Text GLabel 4700 2850 2    50   Input ~ 0
 SCL
 $Comp
 L Connector_Generic:Conn_01x06 J2
@@ -578,11 +546,11 @@ Text GLabel 7150 1350 2    50   Input ~ 0
 SDA
 Text GLabel 7150 1450 2    50   Input ~ 0
 SCL
-NoConn ~ 5150 3100
-NoConn ~ 5150 3200
-NoConn ~ 5150 3300
-NoConn ~ 5150 3400
-NoConn ~ 5150 3500
+NoConn ~ 4700 2950
+NoConn ~ 4700 3050
+NoConn ~ 4700 3150
+NoConn ~ 4700 3250
+NoConn ~ 4700 3350
 $Comp
 L Device:LED_Small D3
 U 1 1 60801C48
@@ -607,11 +575,11 @@ F 3 "~" V 9450 1100 50  0001 C CNN
 $EndComp
 Text Notes 8900 600  2    50   ~ 0
 Indicators
-Text GLabel 3950 2800 0    50   Input ~ 0
+Text GLabel 3500 2650 0    50   Input ~ 0
 LED0
-Text GLabel 3950 2900 0    50   Input ~ 0
+Text GLabel 3500 2750 0    50   Input ~ 0
 LED1
-NoConn ~ 3950 3000
+NoConn ~ 3500 2850
 Text GLabel 8650 1000 1    50   Input ~ 0
 LED0
 Text GLabel 9450 1000 1    50   Input ~ 0
@@ -666,52 +634,43 @@ Wire Wire Line
 	8650 1200 8650 1250
 Wire Notes Line
 	9850 1850 9850 500 
-Text GLabel 10300 850  1    50   Input ~ 0
+Text GLabel 10400 1000 0    50   Input ~ 0
 SCL
 $Comp
 L Device:R_Small R4
 U 1 1 60781223
-P 10300 950
-F 0 "R4" H 10150 900 50  0000 C CNN
-F 1 "10k" H 10150 1000 50  0000 C CNN
-F 2 "" H 10300 950 50  0001 C CNN
-F 3 "~" H 10300 950 50  0001 C CNN
-	1    10300 950 
-	-1   0    0    1   
+P 10500 1000
+F 0 "R4" V 10400 900 50  0000 C CNN
+F 1 "10k" V 10400 1050 50  0000 C CNN
+F 2 "" H 10500 1000 50  0001 C CNN
+F 3 "~" H 10500 1000 50  0001 C CNN
+	1    10500 1000
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 60781CEA
-P 10650 950
-F 0 "R5" H 10500 900 50  0000 C CNN
-F 1 "10k" H 10500 1000 50  0000 C CNN
-F 2 "" H 10650 950 50  0001 C CNN
-F 3 "~" H 10650 950 50  0001 C CNN
-	1    10650 950 
-	-1   0    0    1   
+P 10500 800
+F 0 "R5" V 10400 700 50  0000 C CNN
+F 1 "10k" V 10400 850 50  0000 C CNN
+F 2 "" H 10500 800 50  0001 C CNN
+F 3 "~" H 10500 800 50  0001 C CNN
+	1    10500 800 
+	0    1    1    0   
 $EndComp
-Text GLabel 10650 850  1    50   Input ~ 0
+Text GLabel 10400 800  0    50   Input ~ 0
 SDA
 $Comp
 L power:+3.3V #PWR017
 U 1 1 60782162
-P 10650 1150
-F 0 "#PWR017" H 10650 1000 50  0001 C CNN
-F 1 "+3.3V" V 10650 1400 50  0000 C CNN
-F 2 "" H 10650 1150 50  0001 C CNN
-F 3 "" H 10650 1150 50  0001 C CNN
-	1    10650 1150
-	0    1    1    0   
+P 10700 800
+F 0 "#PWR017" H 10700 650 50  0001 C CNN
+F 1 "+3.3V" H 10850 900 50  0000 C CNN
+F 2 "" H 10700 800 50  0001 C CNN
+F 3 "" H 10700 800 50  0001 C CNN
+	1    10700 800 
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10300 1050 10300 1100
-Wire Wire Line
-	10300 1100 10650 1100
-Wire Wire Line
-	10650 1100 10650 1150
-Wire Wire Line
-	10650 1050 10650 1100
-Connection ~ 10650 1100
 Text Notes 9900 600  0    50   ~ 0
 I2C Pullups\n
 Wire Notes Line
@@ -753,6 +712,45 @@ F 3 "" H 10350 1700 50  0001 C CNN
 $EndComp
 Text Notes 9900 1300 0    50   ~ 0
 Mode Selector
-Text GLabel 3950 3100 0    50   Input ~ 0
+Text GLabel 3500 2950 0    50   Input ~ 0
 MODE
+Wire Wire Line
+	7800 1050 8000 1050
+Wire Wire Line
+	10600 800  10700 800 
+Wire Wire Line
+	10700 1000 10700 800 
+Wire Wire Line
+	10600 1000 10700 1000
+Connection ~ 10700 800 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 607905AF
+P 7900 700
+F 0 "#PWR?" H 7900 550 50  0001 C CNN
+F 1 "+3.3V" H 8100 800 50  0000 C CNN
+F 2 "" H 7900 700 50  0001 C CNN
+F 3 "" H 7900 700 50  0001 C CNN
+	1    7900 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 607905B5
+P 7900 900
+F 0 "D?" V 7800 1050 50  0000 C CNN
+F 1 "D_Schottky" V 7900 1200 50  0000 C CNN
+F 2 "" H 7900 900 50  0001 C CNN
+F 3 "~" H 7900 900 50  0001 C CNN
+	1    7900 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 750  7900 700 
+Wire Notes Line
+	5400 4650 5400 1850
+Wire Notes Line
+	500  4650 5400 4650
+Wire Notes Line
+	6750 1800 6750 500 
 $EndSCHEMATC
