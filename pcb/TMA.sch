@@ -253,7 +253,7 @@ U 1 1 60779647
 P 2900 1100
 F 0 "J1" H 2818 775 50  0000 C CNN
 F 1 "Conn_01x02" H 2818 866 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 2900 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical_SMD_Pin1Left" H 2900 1100 50  0001 C CNN
 F 3 "~" H 2900 1100 50  0001 C CNN
 	1    2900 1100
 	-1   0    0    1   
@@ -635,7 +635,7 @@ U 1 1 607DB715
 P 6950 1200
 F 0 "J2" H 6868 775 50  0000 C CNN
 F 1 "Conn_01x05" H 6868 866 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S5B-PH-K_1x05_P2.00mm_Horizontal" H 6950 1200 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical_SMD_Pin1Left" H 6950 1200 50  0001 C CNN
 F 3 "~" H 6950 1200 50  0001 C CNN
 	1    6950 1200
 	-1   0    0    1   
@@ -666,7 +666,7 @@ U 1 1 607F369F
 P 10350 1550
 F 0 "J4" H 10650 1600 50  0000 C CNN
 F 1 "Conn_01x02" H 10600 1700 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 10350 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical_SMD_Pin1Left" H 10350 1550 50  0001 C CNN
 F 3 "~" H 10350 1550 50  0001 C CNN
 	1    10350 1550
 	-1   0    0    1   
@@ -728,7 +728,7 @@ U 1 1 6079D0A1
 P 7850 1250
 F 0 "J3" H 7768 825 50  0000 C CNN
 F 1 "Conn_01x04" H 7768 916 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7850 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical_SMD_Pin1Left" H 7850 1250 50  0001 C CNN
 F 3 "~" H 7850 1250 50  0001 C CNN
 	1    7850 1250
 	-1   0    0    1   
