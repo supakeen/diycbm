@@ -1,0 +1,24 @@
+### Module positions - created on 04/19/21 22:55:31 ###
+### Printed by Pcbnew version kicad (5.1.7)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val             Package                                                 PosX       PosY       Rot  Side
+C1        100nF           C_0402_1005Metric                                    78.9940   -51.0540  180.0000  top
+C2        100nF           C_0402_1005Metric                                    83.0580   -49.0220   90.0000  top
+C3        100nF           C_0402_1005Metric                                    69.8500   -44.4500  270.0000  top
+C4        4u7             C_0402_1005Metric                                    77.7240   -44.1960    0.0000  top
+C5        100nF           C_0402_1005Metric                                    77.7240   -42.4180    0.0000  top
+C6        4u7             C_0402_1005Metric                                    70.8660   -44.4500  270.0000  top
+C7        100nF           C_0402_1005Metric                                    71.8820   -44.4500  270.0000  top
+D3        BLUE            LED_0402_1005Metric                                  71.6280   -56.1340   90.0000  top
+D4        RED             LED_0402_1005Metric                                  78.4860   -56.1340   90.0000  top
+R1        10k             R_0402_1005Metric                                    77.1652   -53.8480   90.0000  top
+R2        100             R_0402_1005Metric                                    73.1520   -56.6420  180.0000  top
+R3        100             R_0402_1005Metric                                    76.9620   -56.6420    0.0000  top
+R4        4k7             R_0402_1005Metric                                    76.2000   -48.7680  180.0000  top
+R5        4k7             R_0402_1005Metric                                    76.2000   -50.0380  180.0000  top
+U1        BMP280          Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering    79.7560   -53.0860    0.0000  top
+U2        BMI160          Bosch_LGA-14_3x2.5mm_P0.5mm                          80.2640   -47.4980   90.0000  top
+U3        ATtiny1614-SS   SOIC-14_3.9x8.7mm_P1.27mm                            71.3740   -50.0380    0.0000  top
+U4        MIC5504-3.3YM5  SOT-23-5                                             74.6760   -43.1800  180.0000  top
+## End

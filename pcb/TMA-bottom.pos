@@ -1,0 +1,10 @@
+### Module positions - created on 04/19/21 22:55:31 ###
+### Printed by Pcbnew version kicad (5.1.7)-1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val         Package                                            PosX       PosY       Rot  Side
+J1        Conn_01x02  PinHeader_1x02_P1.00mm_Vertical_SMD_Pin1Left    74.9300   -44.4500   90.0000  bottom
+J2        Conn_01x05  PinHeader_1x05_P1.00mm_Vertical_SMD_Pin1Left    69.3420   -50.2920    0.0000  bottom
+J3        Conn_01x04  PinHeader_1x04_P1.00mm_Vertical_SMD_Pin1Left    73.9140   -54.6100    0.0000  bottom
+J4        Conn_01x02  PinHeader_1x02_P1.00mm_Vertical_SMD_Pin1Left    77.4700   -50.8000    0.0000  bottom
+## End
