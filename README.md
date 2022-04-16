@@ -1,4 +1,4 @@
-# TMA
+# diycbm
 
 `TMA`, short for Telemetrics A is a physically tiny PCB design to put into
 model crafts such as model rockets. You can power it through a LiPo cell, it
@@ -17,8 +17,8 @@ speak I2C to the board to get the data out of the flash memory again.
 ## PCB
 
 KiCad PCB related files can be found in the `pcb/` subdirectory, or
-[view the schema PDF](https://github.com/diycbm/TMA/blob/master/pcb/plot/TMA.pdf)
+[view the schema PDF](https://github.com/supakeen/diycbm/blob/master/r01-firststeps/pcb/plot/TMA.pdf)
 directly.
 
-![PCB Render](https://raw.githubusercontent.com/diycbm/TMA/master/example/pcb-3d.png)
-![PCB Routing](https://raw.githubusercontent.com/diycbm/TMA/master/example/pcb-routing.png)
+![PCB Render](https://raw.githubusercontent.com/supakeen/diycbm/master/example/pcb-3d.png)
+![PCB Routing](https://raw.githubusercontent.com/supakeen/diycbm/master/example/pcb-routing.png)
